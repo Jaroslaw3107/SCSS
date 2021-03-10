@@ -1,0 +1,418 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+}
+
+// FOR PHONES
+
+@media(orientation:portrait){
+    .container{
+        width: 100%;
+        min-height: 100vh;
+        background-image: url(/Obrazy/tia.jpg);
+    }
+// <!-- ---------------header-------------------------------------------------- -->   
+// <!-- ---------------header-------------------------------------------------- -->   
+// <!-- ---------------header-------------------------------------------------- -->   
+    .header{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        background-color: rgba(255, 228, 196, 0.750);
+    
+        &__logo{
+            display: flex;
+            flex-basis: 100%;
+            justify-content: center;
+
+            &__a{
+                display: flex;
+                margin: 1em;
+                justify-content: space-around;
+            }
+
+            &__title{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 40vw;
+                font-size: 120px;
+                padding-left: 1vw;
+                padding-right: 1vw;
+            }
+
+            &__img{
+                width: 40vw;
+                max-width: 220px;
+                max-height: 132px;
+            }
+        }
+
+        &__nav{
+            display: flex;
+            justify-content: center;
+            flex-basis: 100%;
+
+            &__ul{
+               display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-decoration: none;
+                list-style-type: none;
+                width: 90%;
+            
+                &__list{
+                    text-decoration: none;
+                    padding: 0.75em;
+                    margin-top: 0.5em;
+                    margin-bottom: 0.5em;
+                    background-color: rgba(255, 221, 177, 0.750);;
+                    flex-basis: 100%;
+    
+                    &__li{
+                        color: black;
+                        text-align: center;
+                        font-size: 60px;
+                        font-weight: bold;
+                    }
+                }
+    
+                &__Galery{
+                    text-decoration: none;
+                    padding: 0.75em;
+                    margin-top: 0.5em;
+                    margin-bottom: 0.5em;
+                    background-color: rgba(255, 221, 177, 0.750);;
+                    flex-basis: 100%;
+    
+                    &__li{
+                        color: black;
+                        text-align: center;
+                        font-size: 60px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+// <!-- ---------------main-------------------------------------------------- -->
+// <!-- ---------------main-------------------------------------------------- -->
+// <!-- ---------------main-------------------------------------------------- -->
+    .main{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__div{
+        display: flex;
+        justify-content: center;
+
+        &__form{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+            width: 80vw;
+            margin-top: 100px;
+            margin-bottom: 100px;
+
+
+            &__p{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                font-size: 40px;
+                background-color: rgba(255, 221, 177, 0.750);
+                border-radius: 20px;
+                height: 70px;
+            }
+
+            &__imie{
+                margin: 3vw;
+                width: 40vw;
+                font-size: 38px;
+            }
+
+            &__nazwisko{
+                margin: 3vw;
+                width: 40vw;
+                font-size: 38px;
+            }
+
+            &__mail{
+                margin: 3vw;
+                width: 60vw;
+                font-size: 38px;
+            }
+
+            &__wiek{
+                margin: 3vw;
+                margin-bottom: 5vw;
+                font-size: 38px;
+                width: 25vw;
+            }
+
+            &__tak{
+                display: flex;
+                justify-content: space-around;
+                flex-basis: 100%;
+
+                &__submit{
+                    width: 150px;
+                    font-size: 33px;
+                }
+    
+                &__reset{
+                    width: 150px;
+                    font-size: 33px;
+                }
+            }
+        }
+    }
+    }
+// <!-- ---------------footer------------------------------------------------- -->
+// <!-- ---------------footer------------------------------------------------- -->
+// <!-- ---------------footer------------------------------------------------- -->
+    .footer{
+        position: fixed;
+        bottom: 0px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 30px;
+        background-color: rgba(255, 228, 196, 1);
+        
+        &__p{
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+}
+
+// <!-- ---------------PC-------------------------------------------------- -->   
+// <!-- ---------------PC-------------------------------------------------- -->   
+// <!-- ---------------PC-------------------------------------------------- -->   
+// <!-- ---------------PC-------------------------------------------------- -->   
+// <!-- ---------------PC-------------------------------------------------- -->   
+// <!-- ---------------PC-------------------------------------------------- -->   
+// <!-- ---------------PC-------------------------------------------------- -->   
+// <!-- ---------------PC-------------------------------------------------- -->   
+// <!-- ---------------PC-------------------------------------------------- -->   
+// <!-- ---------------PC-------------------------------------------------- -->   
+// <!-- ---------------PC-------------------------------------------------- -->   
+// <!-- ---------------PC-------------------------------------------------- -->   
+
+@media(orientation:landscape){
+    .container{
+        width: 100%;
+        min-height: 100vh;
+        background-image: url(/Obrazy/tia.jpg);
+    }
+// <!-- ---------------header-------------------------------------------------- -->   
+// <!-- ---------------header-------------------------------------------------- -->   
+// <!-- ---------------header-------------------------------------------------- -->   
+
+.header{
+    display: flex;
+    flex-basis: 100%;
+    background-color: rgba(255, 228, 196, 0.750);
+
+    &__logo{
+        display: flex;
+        justify-content: flex-start;
+        flex-basis: 40%;
+
+        &__a{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        &__title{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 60px;
+        }
+
+        &__img{
+            height: 90px;
+            margin: 10px;
+        }
+    }
+
+    &__nav{
+        display: flex;
+        justify-content: flex-end;
+        flex-basis: 60%;
+
+        &__ul{
+            display: flex;
+            justify-content: space-around;
+            text-decoration: none;
+            list-style-type: none;
+        
+            &__list{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 75px;
+                text-decoration: none;
+                background-color: rgba(255, 221, 177, 0.750);
+                margin: 20px;
+    
+                &__li{
+                    color: black;
+                    text-align: center;
+                    white-space: nowrap;
+                    font-weight: bold;
+                    font-size: 30px;
+                    padding: 10px;
+                }
+            }
+    
+            &__Galery{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 75px;
+                text-decoration: none;
+                background-color: rgba(255, 221, 177, 0.750);
+                margin: 20px;
+    
+                &__li{
+                    color: black;
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 30px;
+                    padding: 10px;
+                }
+            }
+    
+            &__Contact{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 75px;
+                text-decoration: none;
+                background-color: rgba(255, 221, 177, 0.750);
+                margin: 20px;
+    
+    
+                &__li{
+                    color: black;
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 30px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+
+// <!-- ---------------main-------------------------------------------------- -->
+// <!-- ---------------main-------------------------------------------------- -->
+// <!-- ---------------main-------------------------------------------------- -->
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__div{
+        display: flex;
+        justify-content: center;
+
+        &__form{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+            width: 60vw;
+            margin-top: 80px;
+            margin-bottom: 80px;
+
+
+            &__p{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                font-size: 30px;
+                background-color: rgba(255, 221, 177, 0.750);
+                border-radius: 20px;
+                height: 50px;
+            }
+
+            &__imie{
+                margin: 1.5vw;
+                width: 30vw;
+                font-size: 20px;
+            }
+
+            &__nazwisko{
+                margin: 1.5vw;
+                width: 30vw;
+                font-size: 20px;
+            }
+
+            &__mail{
+                margin: 1.5vw;
+                width: 40vw;
+                font-size: 20px;
+            }
+
+            &__wiek{
+                margin: 1.5vw;
+                margin-bottom: 2vw;
+                font-size: 20px;
+                width: 15vw;
+            }
+
+            &__tak{
+                display: flex;
+                justify-content: space-around;
+                flex-basis: 100%;
+
+                &__submit{
+                    width: 100px;
+                    font-size: 25px;
+
+                }
+    
+                &__reset{
+                    width: 100px;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+
+// <!-- ---------------footer------------------------------------------------- -->
+// <!-- ---------------footer------------------------------------------------- -->
+// <!-- ---------------footer------------------------------------------------- -->
+    .footer{
+        position: fixed;
+        bottom: 0px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 30px;
+        background-color: rgba(255, 228, 196, 1);
+        
+        &__p{
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+}

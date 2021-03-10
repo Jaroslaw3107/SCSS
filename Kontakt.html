@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/Pliki_Wygladu/kontakt/kontakt.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Strona Główna</title>
+</head>
+<body>
+    <div class="container">
+<!-- -----------header------------------------------------------------------- -->
+        <header class="header">
+<!-- ----------logo+title---------------------------------------------------- -->
+            <div class="header__logo"> 
+                <a href="index.html" class="header__logo__a">
+                    <img src="Obrazy/logo.png" alt="logo" class="header__logo__img">
+                </a>
+                <h1 class="header__logo__title">Title</h1>
+            </div>
+<!-- ---------------nav------------------------------------------------------ -->
+            <nav class="header__nav">
+                <ul class="header__nav__ul">
+                    <a class="header__nav__ul__list" href="/Spis.html">
+                        <li class="header__nav__ul__list__li">Spis Treści</li></a>
+                    <a class="header__nav__ul__Galery" href="/Galeria.html">
+                        <li class="header__nav__ul__Galery__li">Galeria</li></a>
+                </ul>
+            </nav>      
+<!-- ---------------koniec headera------------------------------------------- -->
+        </header>
+<!-- ---------------main----------------------------------------------------- -->
+        <main class="main">
+            <div class="main__div">
+            <form action="#" class="main__div__form">
+
+                <p class="main__div__form__p">Wprowadź imię:</p>
+                <label class="main__div__form__tak"><input type="text" placeholder="IMIE" class="main__div__form__imie"></label>
+
+                <p class="main__div__form__p">Wprowadź nazwisko:</p>
+                <label class="main__div__form__tak"><input type="text" placeholder="NAZWISKO" class="main__div__form__nazwisko"></label>
+
+                <p class="main__div__form__p">Wprowadź mail:</p>
+                <label class="main__div__form__tak"><input type="email" placeholder="TWÓJ.MAIL@MAIL.PL" class="main__div__form__mail"></label>
+                
+                <p class="main__div__form__p">Wprowadź wiek:</p>
+                <label class="main__div__form__tak"><input type="number" min="18" placeholder="18" class="main__div__form__wiek"></label>
+
+                <label class="main__div__form__tak"> 
+                <button type="submit" class="main__div__form__tak__submit">Wyślij</button>
+                <button type="reset" class="main__div__form__tak__reset">reset</button>
+                </label>
+
+            </form>
+            </div>
+        </main>
+        <footer class="footer">
+            <p class="footer__p">
+                &copy;Jarosław Kłosek 3i 2021 r.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

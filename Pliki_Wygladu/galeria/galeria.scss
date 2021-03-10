@@ -1,0 +1,316 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+}
+
+// FOR PHONES
+
+@media(orientation:portrait){
+    .container{
+        width: 100%;
+        min-height: 100vh;
+        background-image: url(/Obrazy/tia.jpg);
+    }
+// <!-- ---------------header-------------------------------------------------- -->   
+// <!-- ---------------header-------------------------------------------------- -->   
+// <!-- ---------------header-------------------------------------------------- -->   
+    .header{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        background-color: rgba(255, 228, 196, 0.750);
+    
+        &__logo{
+            display: flex;
+            flex-basis: 100%;
+            justify-content: center;
+
+            &__a{
+                display: flex;
+                margin: 1em;
+                justify-content: space-around;
+            }
+
+            &__title{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 40vw;
+                font-size: 120px;
+                padding-left: 1vw;
+                padding-right: 1vw;
+            }
+
+            &__img{
+                width: 40vw;
+                max-width: 220px;
+                max-height: 132px;
+            }
+        }
+
+        &__nav{
+            display: flex;
+            justify-content: flex-end;
+            flex-basis: 60%;
+    
+            &__ul{
+                display: flex;
+                justify-content: space-around;
+                text-decoration: none;
+                list-style-type: none;
+            
+                &__list{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    height: 75px;
+                    text-decoration: none;
+                    background-color: rgba(255, 221, 177, 0.750);
+                    margin: 20px;
+        
+                    &__li{
+                        color: black;
+                        text-align: center;
+                        white-space: nowrap;
+                        font-weight: bold;
+                        font-size: 30px;
+                        padding: 10px;
+                    }
+                }
+        
+                &__Galery{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    height: 75px;
+                    text-decoration: none;
+                    background-color: rgba(255, 221, 177, 0.750);
+                    margin: 20px;
+        
+                    &__li{
+                        color: black;
+                        text-align: center;
+                        font-weight: bold;
+                        font-size: 30px;
+                        padding: 10px;
+                    }
+                }
+        
+                &__Contact{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    height: 75px;
+                    text-decoration: none;
+                    background-color: rgba(255, 221, 177, 0.750);
+                    margin: 20px;
+        
+        
+                    &__li{
+                        color: black;
+                        text-align: center;
+                        font-weight: bold;
+                        font-size: 30px;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+    }
+// <!-- ---------------main-------------------------------------------------- -->
+// <!-- ---------------main-------------------------------------------------- -->
+// <!-- ---------------main-------------------------------------------------- -->
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    &__img{
+        width: 80vw;
+        margin: 4.5vw;
+        border-radius: 20px;
+}
+}
+// <!-- ---------------footer------------------------------------------------- -->
+// <!-- ---------------footer------------------------------------------------- -->
+// <!-- ---------------footer------------------------------------------------- -->
+    .footer{
+        position: fixed;
+        bottom: 0px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 30px;
+        background-color: rgba(255, 228, 196, 1);
+        
+        &__p{
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+}
+
+// <!-- ---------------PC-------------------------------------------------- -->   
+// <!-- ---------------PC-------------------------------------------------- -->   
+// <!-- ---------------PC-------------------------------------------------- -->   
+// <!-- ---------------PC-------------------------------------------------- -->   
+// <!-- ---------------PC-------------------------------------------------- -->   
+// <!-- ---------------PC-------------------------------------------------- -->   
+// <!-- ---------------PC-------------------------------------------------- -->   
+// <!-- ---------------PC-------------------------------------------------- -->   
+// <!-- ---------------PC-------------------------------------------------- -->   
+// <!-- ---------------PC-------------------------------------------------- -->   
+// <!-- ---------------PC-------------------------------------------------- -->   
+// <!-- ---------------PC-------------------------------------------------- -->   
+
+@media(orientation:landscape){
+    .container{
+        width: 100%;
+        min-height: 100vh;
+        background-image: url(/Obrazy/tia.jpg);
+    }
+// <!-- ---------------header-------------------------------------------------- -->   
+// <!-- ---------------header-------------------------------------------------- -->   
+// <!-- ---------------header-------------------------------------------------- -->   
+
+.header{
+    display: flex;
+    flex-basis: 100%;
+    background-color: rgba(255, 228, 196, 0.750);
+
+    &__logo{
+        display: flex;
+        justify-content: flex-start;
+        flex-basis: 40%;
+
+        &__a{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        &__title{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 60px;
+        }
+
+        &__img{
+            height: 90px;
+            margin: 10px;
+        }
+    }
+
+    &__nav{
+        display: flex;
+        justify-content: flex-end;
+        flex-basis: 60%;
+
+        &__ul{
+            display: flex;
+            justify-content: space-around;
+            text-decoration: none;
+            list-style-type: none;
+        
+            &__list{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 75px;
+                text-decoration: none;
+                background-color: rgba(255, 221, 177, 0.750);
+                margin: 20px;
+    
+                &__li{
+                    color: black;
+                    text-align: center;
+                    white-space: nowrap;
+                    font-weight: bold;
+                    font-size: 30px;
+                    padding: 10px;
+                }
+            }
+    
+            &__Galery{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 75px;
+                text-decoration: none;
+                background-color: rgba(255, 221, 177, 0.750);
+                margin: 20px;
+    
+                &__li{
+                    color: black;
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 30px;
+                    padding: 10px;
+                }
+            }
+    
+            &__Contact{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 75px;
+                text-decoration: none;
+                background-color: rgba(255, 221, 177, 0.750);
+                margin: 20px;
+    
+    
+                &__li{
+                    color: black;
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 30px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+
+// <!-- ---------------main-------------------------------------------------- -->
+// <!-- ---------------main-------------------------------------------------- -->
+// <!-- ---------------main-------------------------------------------------- -->
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    &__img{
+        width: 40vw;
+        margin: 4.5vw;
+        border-radius: 20px;
+}
+}
+// <!-- ---------------footer------------------------------------------------- -->
+// <!-- ---------------footer------------------------------------------------- -->
+// <!-- ---------------footer------------------------------------------------- -->
+    .footer{
+        position: fixed;
+        bottom: 0px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 30px;
+        background-color: rgba(255, 228, 196, 1);
+        
+        &__p{
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+}
